@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+
+
+.center{
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    right: 0px;
+    padding: 10px;
+    text-align: right;
+    margin: 90px;
+    color: white;
+}
+
+
+#opaco { 
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+#centrar{
+    position: relative;
+}
+.centrar {
+    position: absolute;
+    left: 20%;
+    right: 20%; 
+
+}
+.centro{
+    width: 100%;
+}
+.footer{
+    position: relative;
+    background: #205B73;
+  
+}
+
+.color-texto {
+    color: rgb(60, 179, 113);
+    
+  
+}
