@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/miEstilo.css">
+    <title>Integrador JS Tickets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg text-bg-dark fixed-top">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-light" href="#">
+                Conf Bs As
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="MenuNavegacion" class="collapse navbar-collapse  justify-content-end">
+              <ul class="navbar-nav gap-3 ms-3">
+                <li class="nav-item"><a class="nav-link text-secondary" href="#">La conferencia</a> </li>
+                <li class="nav-item"><a class="nav-link text-secondary" href="#">Los oradores</a> </li>
+                <li class="nav-item"><a class="nav-link text-secondary" href="#">El lugar y la fecha</a> </li>
+                <li class="nav-item"><a class="nav-link text-light" href="#">Conviértete en orador</a> </li>
+                <li class="nav-item"><a class="nav-link text-success" href="#">Comprar tickets</a> </li>
+            </ul>
+            </div>    
+      </nav>
+<br>
+<br>
+<div class="container principal ">
+    <div class="row ">
+        <div class="col-sm-4">
+            <div class="card text-center rounded-0" >
+                <div class="card-body border border-primary ">
+                    <h4 class="card-title">Estudiante</h4>
+                    <p class="card-text">Tienen un descuento</p>
+                    <p class="card-text"><strong>80%</strong></p>
+                    <p class="card-text text-secondary"><small>* presentar documentación</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center rounded-0" >
+                <div class="card-body border border-info">
+                    <h4 class="card-title">Trainee</h4>
+                    <p class="card-text">Tienen un descuento</p>
+                    <p class="card-text"><strong>50%</strong></p>
+                    <p class="card-text text-secondary"><small>* presentar documentación</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center rounded-0">
+                <div class="card-body border border-warning">
+                    <h4 class="card-title">Junior</h4>
+                    <p class="card-text">Tienen un descuento</p>
+                    <p class="card-text"><strong>15%</strong></p>
+                    <p class="card-text text-secondary"><small>* presentar documentación</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container ">
+    <div class="text-center">VENTA</div>
+    <div class="text-center"> <h2>VALOR DE TICKET $200</h2></div>
+        <form class="row g-3 centrar">
+            <div class="col-6">
+                <input type="Nombre" class="form-control" placeholder="Nombre" >
+            </div>
+            <div class="col-6">
+                <input type="Apellido" class="form-control" placeholder="Apellido" >
+            </div>
+            <div class="col-12">
+                <input type="Email" class="form-control" placeholder="Email" >
+            </div>
+            <div class="col-6">
+                <label for="cantidad" class="form-label">Cantidad</label>
+                <input type="text" class="form-control" placeholder="cantidad" name="cantidad" id="inputCant">
+            </div>
+            <div class="col-6">
+                <label for="categoria" class="form-label">Categoria</label>
+                <select class="form-select" id="selectCategoria" name="categoria">
+                    <option>Estudiante</option>
+                    <option>Trainee</option>
+                    <option>Junior</option>
+                </select>
+            </div>
+            <div class="col-12 ">
+                <span class="form-control mt-3 bg-info bg-opacity-25 text-primary" id="montoTotal" >Total a pagar: $</span>
+            </div>
+            <div class="d-grid gap-2 col-6 ">
+                <input class="btn btn-success" type="reset" value="Borrar" id="btnBorrar">
+            </div>
+            <div class="d-grid gap-2 col-6">
+                <input class="btn btn-success " type="button" value="Resumen" id="btnResumen">
+            </div>
+        </form>
+</div>
+
+<br>
+    <footer class="footer mt-auto py-3 ">
+        <div class="container">
+            <div class="row text-center text-light">
+                <div class="col-2 nav-item">
+                    <a class="nav-link" href="#">Preguntas frecuentes</a> 
+                </div>
+                <div class="col-2 nav-item">
+                    <a class="nav-link" href="#">Contáctanos</a> 
+                </div>
+                <div class="col-2 nav-item">
+                    <a class="nav-link" href="#">Prensa</a> 
+                </div>
+                <div class="col-2 nav-item">
+                    <a class="nav-link" href="#">Términos y condiciones</a>
+                </div>
+                <div class="col-2 nav-item">
+                    <a class="nav-link" href="#">Privacidad</a>
+                </div>
+                <div class="col-2 nav-item">
+                    <a class="nav-link" href="#">Estudiantes</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
+</body>
+</html>

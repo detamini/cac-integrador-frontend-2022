@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+
+.footer{
+    position: relative;
+    background: #205B73;
+  
+}
+
+.principal {
+  margin-top: 3rem;
+ 
+}
